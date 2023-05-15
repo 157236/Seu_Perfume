@@ -23,9 +23,12 @@
         height: 110px;
         display: flex;
         justify-content: space-between;
+        /*Problema com a imagem do background
         background-image: url("imagens/header.png");
         background-size: cover;
+        */
         flex-direction: row-reverse;
+        background: #d82780;
     }
 
     header .logo{
