@@ -33,12 +33,12 @@
 
     header .logo{
         width: 150px;
+        margin-top: 10px;
         margin-right: 50px;
         height: auto;
     }
 
     header img{
-        padding-top: 10px;
         width: 100%;
     }
     .menu{
