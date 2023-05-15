@@ -1,0 +1,582 @@
+@media (max-width:600px) {
+    *{
+        margin: 0;
+        padding: 0;
+        
+    }
+
+    .container{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "header"
+        "section"
+        "article"
+        "footer"
+        ;
+    }
+
+    header{
+        grid-area: header;
+        width: 100%;
+        height: 110px;
+        display: flex;
+        justify-content: space-between;
+        background-image: url("/imagens/beauty-1262240.png");
+        background-size: cover;
+        flex-direction: row-reverse;
+    }
+
+    header .logo{
+        width: 150px;
+        margin-right: 50px;
+        height: auto;
+    }
+
+    header img{
+        width: 100%;
+    }
+    .menu{
+        display: none;
+    }
+
+    h1{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: #d82780;
+        font-weight: 600;
+        margin: 50px;
+        text-align: center;
+    }
+
+    section h3{
+        color: #d82780;
+        font-weight: 600;
+        text-align: center;
+    }
+    section{
+        width: 100%;
+        grid-area: section;
+        overflow-x: hidden;
+    }
+
+    sidebar{
+        position: absolute;
+        left: -250px;
+        width: 235px;
+        height: 600px;
+        background: rgba(62, 13, 51, 0.8);
+        transition: 1s;
+    }
+
+    sidebar ul li {
+        list-style: none;
+        margin: 20px;
+    }
+
+    sidebar ul li a {
+        text-decoration: none;
+        color: white;
+        font-size: 15px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+    sidebar ul li a:hover{
+       color: rgba(62, 13, 51, 0.8);
+       transition: 0.3s;
+    }
+    h3{
+        width: 100%;
+        height: 50px;
+        margin: 10px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-weight: 100;
+        color: white;
+        display: flex;
+        justify-content: center;
+    }
+    .abrir{
+        position:absolute;
+        top: 32px;
+        right: 80%;
+        color: white;
+        font-size: 35px;
+        transition: 1s;
+    }
+    .fechar{
+        position: absolute;
+        left: -220px;
+        font-size: 40px;
+        color: red;
+        transition: 1s;
+    }
+    header input{
+        display: none;
+    }
+
+    #abrir_fechar:checked ~ sidebar{
+        left: 0px;
+        transition: 1s;
+    }
+
+    #abrir_fechar:checked ~ .fechar{
+        left: 250px;
+        transition: 1s;
+    }
+
+    #abrir_fechar:checked ~ .abrir{
+        opacity: 0;
+        transition: 1s;
+    }
+    
+    .imagens{
+        width: 300px;
+        height: auto;
+        margin:0 auto;
+    }
+
+    .centro{
+        width: 300px;
+        height: 300px;
+        border: 1px solid goldenrod;
+    }
+    
+    .first p{
+        position: absolute;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        top: 45%;
+        color: rgb(253, 253, 253,90%);
+    }
+
+    .first button{
+        position: absolute;
+        top: 65%;
+        left: 40%;
+        background: rgba(226, 104, 206, 0.8);
+        padding: 10px;
+        width: 100px;
+        border: none;
+        border-radius: 10px;
+
+    }
+    .first button a{
+        color: bisque;
+    }
+    /*Segundo botão*/
+
+    .secund p{
+        position: absolute;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        top: 82%;
+        color: rgb(253, 253, 253,90%);
+    }
+
+    .secund button{
+        position: absolute;
+        top: 102%;
+        left: 40%;
+        background: rgba(150, 118, 64, 0.8);
+        padding: 10px;
+        width: 100px;
+        border: none;
+        border-radius: 10px;
+
+    }
+    .secund button a{
+        color: bisque;
+    }
+
+    /*Terceiro botão*/
+    .third p{
+        position: absolute;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        top: 118%;
+        color: rgb(253, 253, 253,90%);
+    }
+
+    .third button{
+        position: absolute;
+        top: 140%;
+        left: 40%;
+        background: rgba(226, 104, 206, 0.8);
+        padding: 10px;
+        width: 100px;
+        border: none;
+        border-radius: 10px;
+
+    }
+    .third button a{
+        color: bisque;
+    }
+    .centro img{
+        width: 100%;
+        height: 300px;
+        
+    }
+    
+
+    article{
+        grid-area: article;
+        width: 100%;
+    }
+
+    .formulario{
+        width: 300px;
+        height: auto;
+        margin: 20px auto;
+    }
+    .formulario img{
+        width: 50px;
+    }
+    h2{
+        text-align: center;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: #e11717;
+        font-weight: 600;
+        margin: 40px;
+    }
+    
+    .formulario p{
+        text-align: justify;
+        flex-wrap: wrap;
+        width: auto;
+        height: 300px;
+    }
+    .formulario button{
+        position: absolute;
+        top: 195%;
+        right: 38%;
+        margin: 10px auto;
+        border: none;
+        border-radius: 10px;
+        padding: 3px;
+        transition: 1s;
+    }
+    
+    .formulario button:hover{
+        background: rgb(88, 250, 73);
+    }
+    .formulario button img{
+        border-radius: 50%;
+        width: 50px;
+        animation: watsap 1s infinite ;
+        transition: all;
+    }
+    
+    @keyframes watsap{
+        0%{
+            width: 110px;
+        }
+        50%{
+            width: 105px;
+        }
+        100%{
+            width: 110px;
+        }
+    }
+    
+    .formulario p{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: rgb(151, 2, 116);
+        font-size: 20px;
+    }
+    footer{
+        grid-area: footer;
+        width: 100%;
+        text-align: center;
+    }
+
+    footer img{
+        width: 50px;
+    }
+
+    footer{
+        grid-area: footer;
+        height: 120px;
+        text-align: center;
+        margin-top:50px;
+        background: rgba(79, 38, 60);
+    }
+    
+    footer p {
+        color: bisque;
+    }
+    
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width:1200px) {
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas:
+     "header"
+     "section"
+     "article"
+     "footer";
+}
+
+header{
+    grid-area: header;
+    width: 100%;
+    height: 150px;
+    background: rgba(11, 11, 11, 0.8);
+    background-image: url("/imagens/beauty-1262240.png");
+    background-size: cover;
+    border-bottom: 2px solid goldenrod;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo{
+    height: 150px;
+    width: 150px;
+    margin-right: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.logo img{
+    width: 100%;
+}
+
+.menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu ul{
+    display: flex;
+}
+
+.menu ul li{
+    list-style: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 10px;
+
+}
+
+.menu ul li a{
+    color: white;
+}
+sidebar, #abrir_fechar, .abrir, .fechar{
+    display: none;
+}
+section{
+    grid-area: section;
+    text-align: center;
+}
+h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #e11717;
+    font-weight: 600;
+    margin: 50px;
+
+}
+
+.imagens{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.centro{
+    width: 25%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid goldenrod;
+}
+
+.first {
+    background-image: url("/imagens/imagem1.jpg");
+    background-size: cover;
+}
+
+.first button{
+    background: rgba(226, 104, 206, 0.8);
+    padding: 10px;
+    width: 100px;
+}
+
+.secund button{
+    background: rgba(121, 81, 52, 0.8);
+    padding: 10px;
+    width: 100px;
+}
+
+.third button{
+    background: rgba(82, 148, 203, 0.8);
+    padding: 10px;
+    width: 100px;
+}
+.secund {
+    background-image: url("/imagens/woman-2099473_1920.jpg");
+    background-size: cover;
+}
+
+.third {
+background-image: url("/imagens/frasco-azul.png");
+background-size: cover;
+}
+.hexagono{
+    position: relative;
+    width: 80%;
+    height: 80%;
+    border: 1px solid white;
+}
+
+.hexagono p{
+    opacity: 1;
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 40px;
+    transition: 1s;    
+}
+
+
+
+section img{
+    width: 100%;
+    height: 100%;
+}
+
+.hexagono button{
+    position: absolute;
+    top: 250px;
+    left: 110px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 10px;
+    border: none;
+    opacity: 1;
+}
+.hexagono button a{
+    color:rgb(253, 253, 253);
+
+    font-weight: 600;
+}
+
+
+
+article{
+    grid-area: article;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2{
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #e11717;
+    font-weight: 600;
+    margin: 50px;
+}
+
+.formulario{
+    text-align: center;
+    width: 600px;
+    height: 300px;
+}
+.formulario button{
+    border: none;
+    border-radius: 10px;
+    padding: 12px;
+    transition: 1s;
+}
+
+.formulario button:hover{
+    background: rgb(88, 250, 73);
+}
+.formulario button img{
+    border-radius: 50%;
+    width: 100px;
+    animation: watsap 1s infinite ;
+    transition: all;
+}
+
+@keyframes watsap{
+    0%{
+        width: 110px;
+    }
+    50%{
+        width: 105px;
+    }
+    100%{
+        width: 110px;
+    }
+}
+
+.formulario p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(151, 2, 116);
+}
+footer{
+    grid-area: footer;
+    height: 150px;
+    text-align: center;
+    margin-top:50px;
+    background: rgba(79, 38, 60);
+}
+
+footer p {
+    color: bisque;
+}
+
+.card{
+    height:50px;
+    width: 100px;
+    margin: 0 auto;
+    background: transparent;
+    border-radius: 50%;
+
+}
+
+.card img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+}
