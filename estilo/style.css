@@ -23,7 +23,8 @@
         height: 110px;
         display: flex;
         justify-content: space-between;
-        background-image: url("/imagens/header.png");
+        background: url("/imagens/header.png");
+        background: #d82780;
         background-size: cover;
         flex-direction: row-reverse;
     }
