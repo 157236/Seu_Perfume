@@ -23,7 +23,7 @@
         height: 110px;
         display: flex;
         justify-content: space-between;
-        background-image: url("/imagens/beauty-1262240.png");
+        background-image: url("imagens/beauty-1262240.png");
         background-size: cover;
         flex-direction: row-reverse;
     }
