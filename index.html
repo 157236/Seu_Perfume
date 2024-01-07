@@ -1,96 +1,112 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilo/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>SeuPerfume</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <title>Seu perfume</title>
+  <style>
+    /* Estilos personalizados aqui, se necessário */
+  </style>
 </head>
 <body>
-    <div class="container">
-        <header>
-            <div class="logo">
-                <img src="imagens/logo6.png" alt="imagem-logo">
-            </div>
-            <div class="menu">
-                <ul>
-                    <li><a href="index.html">Seja bem vindo</a></li>
-                    <li><a href="index.html">Perfume ideal</a></li>
-                    <li><a href="index.html">Contato</a></li>
-                </ul>
-            </div>
 
-            <input type="checkbox" id="abrir_fechar" >
-            <label for="abrir_fechar" class="abrir"><i class="fa fa-navicon"></i></label>
-            <label for="abrir_fechar" class="fechar"><i class="fa fa-close"></i></label>
-            <sidebar>
-                <h3>Seu perfume</h3>
-                
-                <ul>
-                    <li><a href="index.html">Seja bem vindo</a></li>
-                    <li><a href="index.html">Perfume ideal</a></li>
-                    <li><a href="index.html">Contato</a></li>
-                </ul>
-                
-            </sidebar>
-            
-        </header>
-
-        <section>
-            <h1>Olá!<br> Seja bem vindo!</h1>
-            <h3>Acredito que esteja em busca do perfume ideal certo? <br>
-            </h3>
-        <div class="imagens">
-            <div class="centro first">
-                <div class="hexagono">
-                    <p>Descubra</p>
-                    <img src="imagens/perfume-2142824_1920.jpg" alt="imagem-perfume">
-                    <button><a href="https://api.whatsapp.com/send?phone=31971134450&text=Olá!%20estou%20interessado%20nos%20perfumes.">Fragancia</a></button>  
-                </div>
-            </div>
-            <div class="centro secund">
-                <div class="hexagono">
-                    <p>Tenha</p>
-                    <img src="imagens/woman-2099473_1920.jpg" alt="imagem-woman">
-                    <button><a href="https://api.whatsapp.com/send?phone=31971134450&text=Olá!%20estou%20interessado%20nos%20perfumes.">Satisfação</a></button>
-                </div>
-            </div>
-            <div class="centro third">
-                <div class="hexagono">
-                    <p>Crie</p>
-                    <img src="imagens/frasco-azul.png" alt="">
-                    <button><a href="https://api.whatsapp.com/send?phone=31971134450&text=Olá!%20estou%20interessado%20nos%20perfumes.">Style</a></button>
-                </div>
-            </div>
-        </div>
-        </section>
-
-        <article>
-            <div class="formulario">
-                <h2>Quero adquirir o perfume ideal!</h2>
-                <p>Não espere mais para elevar sua experiência com perfumes!
-                     Clique no botão abaixo e deixe-se envolver pelas notas cativantes de um perfume que irá refletir sua personalidade, definir seu estilo e despertar emoções únicas.</p>
-                <button><a href="https://api.whatsapp.com/send?phone=31971134450&text=Olá!%20estou%20interessado%20nos%20perfumes."><img src="imagens/icone-watsap.png" alt="watsap"></a></button>
-            </div>
-        </article>
-
-
-        <footer>
-            <div class="localizacao">
-                <p>Contato 971134450</p>
-                <p>Endereço: Rua Arcanjo Ferreira Nunes 168 Caparaó São Domingos do Prata</p>
-                <div class="card">
-                    <div class="foto">
-                        <img src="imagens/Cleidima.jpeg" alt="vendedora">
-                    </div>
-                    <p>Cleidima Aparecida</p>
-                </div>
-            </div>
-        </footer>
-
-
+  <!-- Header -->
+  <header class="bg-light text-center py-4">
+    <img src="imagens/logo.jpeg" alt="Logo" class="img-fluid" style="max-height: 100px; border-radius: 50%;" >
+    <div class="container mt-3 d-none d-md-block">
+      <nav class="nav" >
+        <a class="nav-link" href="#bem-vindo">Seja bem-vindo</a>
+        <a class="nav-link" href="#quem-somos">Quem somos</a>
+        <a class="nav-link" href="#fazer-pedido">Fazer um pedido</a>
+      </nav>
     </div>
+    <div class="container d-md-none">
+      <button class="btn btn-sm" data-toggle="collapse" data-target="#menuCollapse" style="background: rgb(85, 4, 167); color: aliceblue;">Menu</button>
+    </div>
+  </header>
+
+  <!-- Menu Responsivo -->
+  <div class="container d-md-none">
+    <div class="collapse" id="menuCollapse">
+      <div class="bg-light py-2">
+        <a class="nav-link" href="#bem-vindo">Seja bem-vindo</a>
+        <a class="nav-link" href="#quem-somos">Quem somos</a>
+        <a class="nav-link" href="#fazer-pedido">Fazer um pedido</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Seja bem-vindo -->
+  <section id="bem-vindo" class="py-5">
+    <div class="container">
+      <article>
+        <p>Olá, sou Cleidima Aparecida, uma apaixonada por beleza e bem-estar, e tenho a alegria de compartilhar com você a minha linha exclusiva de produtos cosméticos. Com anos de experiência no ramo, busco proporcionar não apenas produtos de alta qualidade, mas uma experiência única para aqueles que buscam cuidados especiais para sua pele e bem-estar.
+
+            Meus produtos são cuidadosamente formulados para atender às necessidades variadas de beleza e cuidado com a pele. Desde revitalizantes faciais até fragrâncias irresistíveis, cada item é resultado de pesquisa minuciosa e paixão pelo universo da beleza.
+            
+            Acredito que cada pessoa é única, e é por isso que ofereço uma variedade de produtos que se adaptam a diferentes tipos de pele e preferências pessoais. Minha missão é não apenas proporcionar produtos excepcionais, mas também promover a autoestima e a confiança em cada indivíduo que escolhe confiar em minha linha de cosméticos.
+            
+            Explore a minha coleção e descubra o poder transformador de cuidar de si mesmo. Estou aqui para auxiliá-lo na jornada de descoberta da sua beleza interior e exterior. Seja bem-vindo ao mundo encantador dos produtos Cleidima Aparecida Cosméticos, onde a beleza é uma celebração de você!</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- Quem somos -->
+  <section id="quem-somos" class="py-5">
+    <div class="container">
+      <div class="card-deck">
+        <!-- Cards com informações sobre os perfumes -->
+        <div class="card">
+          <img src="imagens/imagem1.jpg" class="card-img-top" alt="Perfume 1" style="height: 300px";>
+          <div class="card-body">
+            <h5 class="card-title">Perfume 1</h5>
+            <p class="card-text">Descrição do perfume 1.</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="imagens/imagem2.jpeg" class="card-img-top" alt="Perfume 2" style="height: 300px";>
+          <div class="card-body">
+            <h5 class="card-title">Perfume 2</h5>
+            <p class="card-text">Descrição do perfume 2.</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="imagens/imagem3.png" class="card-img-top" alt="Perfume 3" style="height: 300px";>
+          <div class="card-body">
+            <h5 class="card-title">Perfume 3</h5>
+            <p class="card-text">Descrição do perfume 3.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Fazer um pedido -->
+  <section id="fazer-pedido" class="bg-light text-center py-5">
+    <div class="container">
+      <button class="btn btn-success btn-lg">
+        <i class="fab fa-whatsapp mr-2"></i> Fazer um pedido pelo WhatsApp
+      </button>
+    </div>
+  </section>
+
+  <footer class="bg-dark text-light py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+            <button><a href="https://api.whatsapp.com/send?phone=31971134450&text=Olá!%20estou%20interessado%20nos%20perfumes."><img src="imagens/icone-watsap.png" alt="watsap"></a></button>
+        </div>
+        <div class="col-md-6">
+            <p>Endereço: Rua Arcanjo Ferreira Nunes 168, Caparaó, São Domingos do Prata</p>
+          </div>
+      </div>
+    </div>
+  </footer>
+</footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
